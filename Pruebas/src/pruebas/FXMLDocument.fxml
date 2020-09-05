@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pruebas.FXMLDocumentController">
+    <children>
+      <SplitPane dividerPositions="0.720489977728285, 0.7271714922048997" layoutX="-2.0" prefHeight="503.0" prefWidth="900.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="688.0">
+               <children>
+                  <TableView fx:id="tablausuario" layoutY="-2.0" prefHeight="501.0" prefWidth="644.0">
+                    <columns>
+                        <TableColumn fx:id="cold" prefWidth="67.0" text="idusuario" />
+                        <TableColumn fx:id="coltip" prefWidth="105.0" text="Tipo De usuario" />
+                      <TableColumn fx:id="colnom" prefWidth="71.0" text="Nombre" />
+                      <TableColumn fx:id="colape" prefWidth="79.0" text="Apellido" />
+                        <TableColumn fx:id="colusu" prefWidth="75.0" text="Usuario" />
+                        <TableColumn fx:id="colcontra" prefWidth="75.0" text="Contraseña" />
+                        <TableColumn fx:id="colest" prefWidth="90.0" text="Estado" />
+                        <TableColumn fx:id="colgen" minWidth="5.0" prefWidth="81.0" text="Genero" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="191.0" />
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="501.0" prefWidth="191.0">
+               <children>
+                  <Label layoutX="14.0" layoutY="45.0" text="Id Usuario">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="11.0" layoutY="82.0" prefHeight="20.0" prefWidth="127.0" text="Tipo de usuario">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="114.0" text="Nombre">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="147.0" text="Apellido">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="186.0" text="Usuario">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="219.0" text="Contraseña">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="251.0" text="Estado">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="282.0" text="Genero">
+                     <font>
+                        <Font name="Arial Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtidusur" layoutX="153.0" layoutY="43.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txttipo" layoutX="153.0" layoutY="80.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtnom" layoutX="153.0" layoutY="112.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtape" layoutX="153.0" layoutY="145.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtusu" layoutX="153.0" layoutY="184.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtcon" layoutX="153.0" layoutY="217.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtest" layoutX="153.0" layoutY="249.0" prefHeight="25.0" prefWidth="84.0" />
+                  <TextField fx:id="txtgen" layoutX="153.0" layoutY="280.0" prefHeight="25.0" prefWidth="84.0" />
+                  <Button fx:id="boting" layoutX="14.0" layoutY="370.0" mnemonicParsing="false" text="Ingresar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botedit" layoutX="95.0" layoutY="370.0" mnemonicParsing="false" text="Editar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="botelim" layoutX="166.0" layoutY="370.0" mnemonicParsing="false" text="Eliminar">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="txtnue" layoutX="24.0" layoutY="411.0" mnemonicParsing="false" text="Nuevo" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>
